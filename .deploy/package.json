@@ -1,0 +1,33 @@
+{
+  "name": "vertex-thomson",
+  "version": "0.0.0",
+  "server": false,
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "",
+    "build": "npm run clean && gulp prod",
+    "reset": "rimraf ./tmp/*",
+    "clean": "rimraf ./public/dist",
+    "postinstall": "turbo postinstall"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hogan-express": "^0.5.2",
+    "hogan.js": "^3.0.2",
+    "proxy-addr": "^2.0.3",
+    "range-parser": "^1.2.0",
+    "safe-buffer": "5.1.1",
+    "send": "0.16.2",
+    "serve-static": "1.13.2",
+    "statuses": "^1.4.0",
+    "turbo-cli": "^0.39.5",
+    "turbo360": "^1.8.68",
+    "vary": "^1.1.2",
+    "vertex360": "^0.29.9"
+  },
+  "deploy": [
+    "."
+  ],
+  "format": "vertex"
+}
